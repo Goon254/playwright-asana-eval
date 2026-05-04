@@ -50,5 +50,17 @@ Confirm tags: "Design”
 
 Submission Instructions
 Publish your code to a public GitHub repository and provide the link in the Google form.
-Provide a short, 2-3 minute video walking through your code to share your solution and your thought process behind it. This is similar to how we share our work with clients and is designed to give us a glimpse into your communication style. 
+Provide a short, 2-3 minute video walking through your code to share your solution and your thought process behind it. This is similar to how we share our work with clients and is designed to give us a glimpse into your communication style. 
 Upload the video into the Google Form.
+
+---
+
+## Running this suite (implementation)
+
+Prerequisites: **Node.js 18+**.
+
+1. Install dependencies (also downloads Chromium into `.pw-browsers` via `postinstall`): `npm install`
+2. Run all evaluation scenarios: `npm test`
+3. Open the HTML report after failures: `npm run report`
+
+**Where things live:** scenarios in `data/test-cases.json`; URL and credentials in `data/config.json`; generated tests in `tests/board.spec.ts`; reusable flows in `pages/LoginPage.ts` and `pages/BoardPage.ts`.
